@@ -1,11 +1,11 @@
-#---sample loadtest city cool
+#---loadtest city cool
 execution:
-  scenario: blazemeter-recording
+  scenario: citycool
   concurrency: 2
   ramp-up: 5s
   hold-for: 30s
 scenarios:
-  blazemeter-recording:
+  citycool:
     headers:
       User-Agent: 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'
       Accept-Encoding: 'gzip, deflate, sdch, br'
@@ -17,27 +17,9 @@ scenarios:
         headers:
           Upgrade-Insecure-Requests: '1'
           Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
-      - url: 'https://rtp-qa1-demo1.adm01.com/js/setddo.js'
-        method: GET
-        label: 'setddo JS'
-        headers:
-          Accept: '*/*'
-          Referer: 'https://rtp-qa1-demo1.adm01.com/products/all.html'
-      - url: 'https://rtp-qa1-demo1.adm01.com/lib/node_modules/requirejs/require.js'
-        method: GET
-        label: 'require JS1'
-        headers:
-          Accept: '*/*'
-          Referer: 'https://rtp-qa1-demo1.adm01.com/products/all.html'
       - url: 'https://rtp-qa1-xe.adm01.com/xe/execution-engine.min.js'
         method: GET
         label: 'execution engine JS1'
-        headers:
-          Accept: '*/*'
-          Referer: 'https://rtp-qa1-demo1.adm01.com/products/all.html'
-      - url: 'https://rtp-qa1-demo1.adm01.com/lib/node_modules/requirejs/require.js'
-        method: GET
-        label: 'require JS2'
         headers:
           Accept: '*/*'
           Referer: 'https://rtp-qa1-demo1.adm01.com/products/all.html'
