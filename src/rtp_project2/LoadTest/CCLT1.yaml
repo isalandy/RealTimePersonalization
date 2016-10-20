@@ -3,7 +3,7 @@
 execution:
   scenario: citycool
   concurrency: 2
-  ramp-up: 5s
+  ramp-up: 6s
   hold-for: 30s
 scenarios:
   citycool:
