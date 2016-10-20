@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jmeterTestPlan>
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="BZT Generated Test Plan">
+      <elementProp elementType="Arguments" guiclass="ArgumentsPanel" name="TestPlan.user_defined_variables" testclass="Arguments"/>
+    <boolProp name="TestPlan.functional_mode">false</boolProp></TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ThreadGroup">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp elementType="LoopController" guiclass="LoopControlPanel" name="ThreadGroup.main_controller" testclass="LoopController">
+          <boolProp name="LoopController.continue_forever">true</boolProp>
+          <intProp name="LoopController.loops">-1</intProp></elementProp>
+        <stringProp name="ThreadGroup.num_threads">2</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <stringProp name="ThreadGroup.start_time"/>
+        <stringProp name="ThreadGroup.end_time"/>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <longProp name="ThreadGroup.duration">40</longProp>
+      </ThreadGroup>
+      <hashTree type="tg">
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp elementType="Header" name="">
+              <stringProp name="Header.name">Accept-Language</stringProp>
+              <stringProp name="Header.value">en-US,en;q=0.8</stringProp>
+            </elementProp>
+            <elementProp elementType="Header" name="">
+              <stringProp name="Header.name">Accept-Encoding</stringProp>
+              <stringProp name="Header.value">gzip, deflate, sdch, br</stringProp>
+            </elementProp>
+            <elementProp elementType="Header" name="">
+              <stringProp name="Header.name">User-Agent</stringProp>
+              <stringProp name="Header.value">Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="Cache">
+          <boolProp name="clearEachIteration">true</boolProp>
+          <boolProp name="useExpires">true</boolProp>
+        </CacheManager>
+        <hashTree/>
+        <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="Cookies">
+          <boolProp name="CookieManager.clearEachIteration">true</boolProp>
+        </CookieManager>
+        <hashTree/>
+        <DNSCacheManager guiclass="DNSCachePanel" testclass="DNSCacheManager" testname="DNS Cache Manager">
+          <collectionProp name="DNSCacheManager.servers"/>
+          <boolProp name="DNSCacheManager.clearEachIteration">false</boolProp>
+          <boolProp name="DNSCacheManager.isCustomResolver">false</boolProp>
+        </DNSCacheManager>
+        <hashTree/>
+        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="Defaults">
+          <boolProp name="HTTPSampler.image_parser">true</boolProp>
+          <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
+          <stringProp name="HTTPSampler.concurrentPool">4</stringProp>
+          <elementProp elementType="Arguments" guiclass="HTTPArgumentsPanel" name="HTTPsampler.Arguments" testclass="Arguments" testname="user_defined"/>
+        </ConfigTestElement>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Product Page">
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.domain">rtp-qa1-demo1.adm01.com</stringProp>
+          <stringProp name="HTTPSampler.port"/>
+          <stringProp name="HTTPSampler.path">/products/all.html</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp elementType="Header" name="">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</stringProp>
+              </elementProp>
+              <elementProp elementType="Header" name="">
+                <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="execution engine JS1">
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.domain">rtp-qa1-xe.adm01.com</stringProp>
+          <stringProp name="HTTPSampler.port"/>
+          <stringProp name="HTTPSampler.path">/xe/execution-engine.min.js</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp elementType="Header" name="">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://rtp-qa1-demo1.adm01.com/products/all.html</stringProp>
+              </elementProp>
+              <elementProp elementType="Header" name="">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="execution engine JS2">
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.domain">rtp-qa1-xe.adm01.com</stringProp>
+          <stringProp name="HTTPSampler.port"/>
+          <stringProp name="HTTPSampler.path">/xe/execution-engine.min.js</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp elementType="Header" name="">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://rtp-qa1-demo1.adm01.com/products/all.html</stringProp>
+              </elementProp>
+              <elementProp elementType="Header" name="">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="public API">
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.domain">rtp-qa1-api.adm01.com</stringProp>
+          <stringProp name="HTTPSampler.port"/>
+          <stringProp name="HTTPSampler.path">/rtp/YFXHIGyr8p4NU8mYtb_FaZ6GUYhbV0HDrtbE5d2cVbU=</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp elementType="Header" name="">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">https://rtp-qa1-demo1.adm01.com</stringProp>
+              </elementProp>
+              <elementProp elementType="Header" name="">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">https://rtp-qa1-demo1.adm01.com/products/all.html</stringProp>
+              </elementProp>
+              <elementProp elementType="Header" name="">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false"/>
+      <hashTree/>
+    <ResultCollector guiclass="SimpleDataWriter" testclass="ResultCollector" testname="KPI Writer"><stringProp name="filename">C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl</stringProp><objProp><name>saveConfig</name><value class="SampleSaveConfiguration"><code>true</code><encoding>false</encoding><threadCounts>true</threadCounts><samplerData>false</samplerData><assertions>false</assertions><message>true</message><responseHeaders>false</responseHeaders><xml>false</xml><latency>true</latency><requestHeaders>false</requestHeaders><hostname>true</hostname><fieldNames>true</fieldNames><label>true</label><subresults>false</subresults><saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage><dataType>false</dataType><timestamp>true</timestamp><responseData>false</responseData><success>true</success><url>false</url><threadName>true</threadName><bytes>false</bytes><responseDataOnError>false</responseDataOnError><time>true</time></value></objProp></ResultCollector><hashTree/><ResultCollector guiclass="SimpleDataWriter" testclass="ResultCollector" testname="Errors Writer"><stringProp name="filename">C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\error.jtl</stringProp><objProp><name>saveConfig</name><value class="SampleSaveConfiguration"><code>true</code><encoding>true</encoding><threadCounts>true</threadCounts><samplerData>false</samplerData><assertions>true</assertions><message>true</message><responseHeaders>true</responseHeaders><xml>true</xml><latency>true</latency><requestHeaders>true</requestHeaders><fieldNames>true</fieldNames><label>true</label><subresults>true</subresults><saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage><dataType>true</dataType><timestamp>true</timestamp><responseData>false</responseData><success>true</success><url>true</url><threadName>true</threadName><bytes>true</bytes><responseDataOnError>true</responseDataOnError><time>true</time></value></objProp><boolProp name="ResultCollector.error_logging">true</boolProp></ResultCollector><hashTree/></hashTree>
+  </hashTree>
+</jmeterTestPlan>

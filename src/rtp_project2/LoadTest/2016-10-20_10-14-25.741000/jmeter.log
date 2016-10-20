@@ -1,0 +1,72 @@
+2016/10/20 10:14:26 INFO  - jmeter.util.JMeterUtils: Setting Locale to en_US 
+2016/10/20 10:14:26 INFO  - jmeter.JMeter: Loading user properties from: C:\Users\IBM_ADMIN\.bzt\jmeter-taurus\bin\user.properties 
+2016/10/20 10:14:26 INFO  - jmeter.JMeter: Loading system properties from: C:\Users\IBM_ADMIN\.bzt\jmeter-taurus\bin\system.properties 
+2016/10/20 10:14:26 INFO  - jmeter.JMeter: Setting System properties from file: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\system.properties 
+2016/10/20 10:14:26 INFO  - jmeter.JMeter: Copyright (c) 1998-2016 The Apache Software Foundation 
+2016/10/20 10:14:26 INFO  - jmeter.JMeter: Version 3.0 r1743807 
+2016/10/20 10:14:26 INFO  - jmeter.JMeter: java.version=1.8.0_102 
+2016/10/20 10:14:26 INFO  - jmeter.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM 
+2016/10/20 10:14:26 INFO  - jmeter.JMeter: os.name=Windows 7 
+2016/10/20 10:14:26 INFO  - jmeter.JMeter: os.arch=amd64 
+2016/10/20 10:14:26 INFO  - jmeter.JMeter: os.version=6.1 
+2016/10/20 10:14:26 INFO  - jmeter.JMeter: file.encoding=Cp1252 
+2016/10/20 10:14:26 INFO  - jmeter.JMeter: Max memory     =523763712 
+2016/10/20 10:14:26 INFO  - jmeter.JMeter: Available Processors =8 
+2016/10/20 10:14:26 INFO  - jmeter.JMeter: Default Locale=English (United States) 
+2016/10/20 10:14:26 INFO  - jmeter.JMeter: JMeter  Locale=English (United States) 
+2016/10/20 10:14:26 INFO  - jmeter.JMeter: JMeterHome=C:\Users\IBM_ADMIN\.bzt\jmeter-taurus 
+2016/10/20 10:14:26 INFO  - jmeter.JMeter: user.dir  =C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest 
+2016/10/20 10:14:26 INFO  - jmeter.JMeter: PWD       =C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest 
+2016/10/20 10:14:26 INFO  - jmeter.JMeter: IP: 9.39.173.125 Name: IBM222-R90HV5S2 FullName: IBM222-R90HV5S2.usga.ibm.com 
+2016/10/20 10:14:26 INFO  - jmeter.JMeter: user.classpath=C:/Users/IBM_ADMIN/Documents/NetBeansProjects/RTP_Project2/src/rtp_project2/LoadTest/2016-10-20_10-14-25.741000 
+2016/10/20 10:14:26 INFO  - jmeter.JMeter: Adding to classpath and loader: C:/Users/IBM_ADMIN/Documents/NetBeansProjects/RTP_Project2/src/rtp_project2/LoadTest/2016-10-20_10-14-25.741000 
+2016/10/20 10:14:26 INFO  - jmeter.services.FileServer: Default base='C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest' 
+2016/10/20 10:14:26 INFO  - jmeter.services.FileServer: Set new base='C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000' 
+2016/10/20 10:14:26 INFO  - jmeter.save.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2 
+2016/10/20 10:14:26 INFO  - jmeter.save.SaveService: Using SaveService properties file encoding UTF-8 
+2016/10/20 10:14:26 INFO  - jmeter.save.SaveService: Using SaveService properties version 2.9 
+2016/10/20 10:14:26 INFO  - jmeter.save.SaveService: All converter versions present and correct 
+2016/10/20 10:14:26 INFO  - jmeter.save.SaveService: Loading file: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\modified_requests.jmx 
+2016/10/20 10:14:26 INFO  - jmeter.protocol.http.control.CacheManager: Will only cache the following methods: [GET] 
+2016/10/20 10:14:26 INFO  - jmeter.protocol.http.control.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_ 
+2016/10/20 10:14:26 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2016/10/20 10:14:26 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2016/10/20 10:14:26 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2016/10/20 10:14:26 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2016/10/20 10:14:26 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser 
+2016/10/20 10:14:26 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser 
+2016/10/20 10:14:27 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2016/10/20 10:14:27 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2016/10/20 10:14:27 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2016/10/20 10:14:27 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must contain the string: '.functions.' 
+2016/10/20 10:14:27 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must not contain the string: '.gui.' 
+2016/10/20 10:14:27 INFO  - jmeter.JMeter: Running test (1476972867100) 
+2016/10/20 10:14:27 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : ThreadGroup 
+2016/10/20 10:14:27 INFO  - jmeter.engine.StandardJMeterEngine: Starting 2 threads for group ThreadGroup. 
+2016/10/20 10:14:27 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/10/20 10:14:27 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 2 ramp-up 10 perThread 5000.0 delayedStart=false 
+2016/10/20 10:14:27 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2016/10/20 10:14:27 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2016/10/20 10:14:27 INFO  - jmeter.threads.JMeterThread: Thread started: ThreadGroup 1-1 
+2016/10/20 10:14:27 INFO  - jmeter.protocol.http.sampler.HTTPHCAbstractImpl: Local host = IBM222-R90HV5S2 
+2016/10/20 10:14:27 INFO  - jmeter.protocol.http.sampler.HTTPHC4Impl: HTTP request retry count = 0 
+2016/10/20 10:14:27 INFO  - jmeter.samplers.SampleResult: Note: Sample TimeStamps are START times 
+2016/10/20 10:14:27 INFO  - jmeter.samplers.SampleResult: sampleresult.default.encoding is set to ISO-8859-1 
+2016/10/20 10:14:27 INFO  - jmeter.samplers.SampleResult: sampleresult.useNanoTime=true 
+2016/10/20 10:14:27 INFO  - jmeter.samplers.SampleResult: sampleresult.nanoThreadSleep=5000 
+2016/10/20 10:14:27 INFO  - jmeter.protocol.http.sampler.LazySchemeSocketFactory: Setting up HTTPS TrustAll Socket Factory 
+2016/10/20 10:14:27 INFO  - jmeter.util.JsseSSLManager: Using default SSL protocol: TLS 
+2016/10/20 10:14:27 INFO  - jmeter.util.JsseSSLManager: SSL session context: per-thread 
+2016/10/20 10:14:27 INFO  - jmeter.util.SSLManager: JmeterKeyStore Location:  type JKS 
+2016/10/20 10:14:27 INFO  - jmeter.util.SSLManager: KeyStore created OK 
+2016/10/20 10:14:27 WARN  - jmeter.util.SSLManager: Keystore file not found, loading empty keystore 
+2016/10/20 10:14:28 INFO  - jmeter.protocol.http.parser.BaseParser: Created org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2016/10/20 10:14:28 INFO  - jmeter.protocol.http.sampler.ResourcesDownloader: Creating ResourcesDownloader with keepalive_inseconds:60 
+2016/10/20 10:14:29 INFO  - jmeter.protocol.http.parser.BaseParser: Created org.apache.jmeter.protocol.http.parser.CssParser 
+2016/10/20 10:14:32 INFO  - jmeter.threads.JMeterThread: Thread started: ThreadGroup 1-2 
+2016/10/20 10:15:07 INFO  - jmeter.threads.JMeterThread: Stopping because end time detected by thread: ThreadGroup 1-1 
+2016/10/20 10:15:07 INFO  - jmeter.threads.JMeterThread: Thread finished: ThreadGroup 1-1 
+2016/10/20 10:15:07 INFO  - jmeter.threads.JMeterThread: Stopping because end time detected by thread: ThreadGroup 1-2 
+2016/10/20 10:15:07 INFO  - jmeter.threads.JMeterThread: Thread finished: ThreadGroup 1-2 
+2016/10/20 10:15:07 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2016/10/20 10:15:07 INFO  - jmeter.engine.StandardJMeterEngine: Forced JVM shutdown requested at end of test 

@@ -1,0 +1,40 @@
+---
+execution:
+  concurrency: 2
+  hold-for: 30s
+  ramp-up: 10s
+  scenario: citycool
+scenarios:
+  citycool:
+    headers:
+      Accept-Encoding: gzip, deflate, sdch, br
+      Accept-Language: en-US,en;q=0.8
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/53.0.2785.143 Safari/537.36
+    requests:
+    - headers:
+        Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+        Upgrade-Insecure-Requests: '1'
+      label: Product Page
+      method: GET
+      url: https://rtp-qa1-demo1.adm01.com/products/all.html
+    - headers:
+        Accept: '*/*'
+        Referer: https://rtp-qa1-demo1.adm01.com/products/all.html
+      label: execution engine JS1
+      method: GET
+      url: https://rtp-qa1-xe.adm01.com/xe/execution-engine.min.js
+    - headers:
+        Accept: '*/*'
+        Referer: https://rtp-qa1-demo1.adm01.com/products/all.html
+      label: execution engine JS2
+      method: GET
+      url: https://rtp-qa1-xe.adm01.com/xe/execution-engine.min.js
+    - headers:
+        Accept: '*/*'
+        Origin: https://rtp-qa1-demo1.adm01.com
+        Referer: https://rtp-qa1-demo1.adm01.com/products/all.html
+      label: public API
+      method: GET
+      url: https://rtp-qa1-api.adm01.com/rtp/YFXHIGyr8p4NU8mYtb_FaZ6GUYhbV0HDrtbE5d2cVbU=
+

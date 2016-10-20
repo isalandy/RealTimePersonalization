@@ -1,0 +1,739 @@
+[2016-10-20 15:12:38,299 INFO root] Taurus CLI Tool v1.7.0
+[2016-10-20 15:12:38,299 DEBUG root] Command-line options: {'verbose': None, 'no_system_configs': None, 'quiet': None, 'log': 'bzt.log', 'option': None, 'aliases': []}
+[2016-10-20 15:12:38,299 DEBUG root] Python: CPython 2.7.12
+[2016-10-20 15:12:38,299 DEBUG root] OS: ('Windows', 'IBM222-R90HV5S2', '7', '6.1.7601', 'AMD64', 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel')
+[2016-10-20 10:14:25,312 INFO root] Taurus CLI Tool v1.7.0
+[2016-10-20 10:14:25,315 DEBUG root] Command-line options: {'verbose': None, 'no_system_configs': None, 'quiet': None, 'log': 'bzt.log', 'option': None, 'aliases': []}
+[2016-10-20 10:14:25,315 DEBUG root] Python: CPython 2.7.12
+[2016-10-20 10:14:25,315 DEBUG root] OS: ('Windows', 'IBM222-R90HV5S2', '7', '6.1.7601', 'AMD64', 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel')
+[2016-10-20 10:14:25,315 INFO root] Starting with configs: ['cclt1.yaml']
+[2016-10-20 10:14:25,318 INFO Engine] Configuring...
+[2016-10-20 10:14:25,319 DEBUG Engine] Reading machine configs from: C:\etc\bzt.d
+[2016-10-20 10:14:25,319 INFO Engine] No personal config: C:\Users\IBM_ADMIN\.bzt-rc
+[2016-10-20 10:14:25,321 DEBUG Engine.Configuration] Configs: ['C:\\etc\\bzt.d\\10-base.json', 'C:\\etc\\bzt.d\\99-installID.yml']
+[2016-10-20 10:14:25,322 DEBUG Engine.Configuration] Reading C:\etc\bzt.d\10-base.json as JSON
+[2016-10-20 10:14:25,322 DEBUG Engine.Configuration] Reading C:\etc\bzt.d\99-installID.yml as YAML
+[2016-10-20 10:14:25,322 DEBUG Engine.Configuration] Configs: ['cclt1.yaml']
+[2016-10-20 10:14:25,322 DEBUG Engine.Configuration] Reading cclt1.yaml as YAML
+[2016-10-20 10:14:25,328 DEBUG root] Configs: ['cclt1.yaml']
+[2016-10-20 10:14:25,328 DEBUG root] Reading cclt1.yaml as YAML
+[2016-10-20 10:14:25,332 DEBUG Engine] Requesting updates info: http://gettaurus.org/updates/?version=1.7.0&installID=19096118-c942-4763-a960-0299b302777e
+[2016-10-20 10:14:25,736 DEBUG Engine] Result: {"latest":"1.7.2","needsUpgrade":true}
+[2016-10-20 10:14:25,736 WARNING Engine] There is newer version of Taurus 1.7.2 available, consider upgrading
+[2016-10-20 10:14:25,740 INFO Engine] Artifacts dir: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000
+[2016-10-20 10:14:25,746 DEBUG Engine] New artifact filename: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\effective
+[2016-10-20 10:14:25,747 DEBUG Engine.Configuration] Dumping YAML config into C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\effective.yml
+[2016-10-20 10:14:25,763 DEBUG Engine.Configuration] Dumping JSON config into C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\effective.json
+[2016-10-20 10:14:25,765 DEBUG Engine] New artifact filename: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\merged.yml
+[2016-10-20 10:14:25,766 DEBUG root] Dumping YAML config into C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\merged.yml
+[2016-10-20 10:14:25,769 DEBUG Engine] New artifact filename: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\merged.json
+[2016-10-20 10:14:25,770 DEBUG root] Dumping JSON config into C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\merged.json
+[2016-10-20 10:14:25,770 DEBUG Engine] Add existing artifact (move=False): cclt1.yaml
+[2016-10-20 10:14:25,770 DEBUG Engine] Copying cclt1.yaml to C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\cclt1.yaml
+[2016-10-20 10:14:25,772 INFO Engine] Preparing...
+[2016-10-20 10:14:25,773 DEBUG Engine] Module config: consolidator defaultdict(None, {u'ignore-labels': [u'ignore'], u'percentiles': [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0], u'class': u'bzt.modules.aggregator.ConsolidatingAggregator'})
+[2016-10-20 10:14:25,773 DEBUG root] Importing module: bzt.modules.aggregator
+[2016-10-20 10:14:25,778 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from 'C:\Program Files\Common Files\Python\2.7\lib\site-packages\bzt\modules\aggregator.pyc'>
+[2016-10-20 10:14:25,779 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
+[2016-10-20 10:14:25,779 DEBUG Engine] Module config: monitoring defaultdict(None, {u'class': u'bzt.modules.monitoring.Monitoring'})
+[2016-10-20 10:14:25,779 DEBUG root] Importing module: bzt.modules.monitoring
+[2016-10-20 10:14:25,832 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from 'C:\Program Files\Common Files\Python\2.7\lib\site-packages\bzt\modules\monitoring.pyc'>
+[2016-10-20 10:14:25,834 DEBUG Engine] Module config: local defaultdict(None, {u'class': u'bzt.modules.provisioning.Local'})
+[2016-10-20 10:14:25,834 DEBUG root] Importing module: bzt.modules.provisioning
+[2016-10-20 10:14:25,834 DEBUG root] Loading class: 'Local' from <module 'bzt.modules.provisioning' from 'C:\Program Files\Common Files\Python\2.7\lib\site-packages\bzt\modules\provisioning.pyc'>
+[2016-10-20 10:14:25,834 DEBUG Engine] Module config: jmeter defaultdict(None, {u'path': u'~/.bzt/jmeter-taurus/', u'plugins': [u'jpgc-casutg', u'jpgc-dummy', u'jpgc-ffw', u'jpgc-fifo', u'jpgc-functions', u'jpgc-json', u'jpgc-perfmon', u'jpgc-prmctl', u'jpgc-tst'], u'properties': defaultdict(None, {u'jmeter.save.saveservice.autoflush': u'true', u'jmeterengine.force.system.exit': u'true', u'jmeter.save.saveservice.connect_time': u'true', u'summariser.name': u'', u'mode': u'Stripped'}), u'class': u'bzt.modules.jmeter.JMeterExecutor'})
+[2016-10-20 10:14:25,834 DEBUG root] Importing module: bzt.modules.jmeter
+[2016-10-20 10:14:25,846 DEBUG root] Loading class: 'JMeterExecutor' from <module 'bzt.modules.jmeter' from 'C:\Program Files\Common Files\Python\2.7\lib\site-packages\bzt\modules\jmeter.pyc'>
+[2016-10-20 10:14:25,846 DEBUG Engine.local] Preparing executor: jmeter/64119472
+[2016-10-20 10:14:25,848 DEBUG Engine] New artifact filename: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\jmeter.log
+[2016-10-20 10:14:25,848 DEBUG Engine.jmeter] Checking if port 4445 is free
+[2016-10-20 10:14:25,848 DEBUG Engine.jmeter] Port 4445 is free
+[2016-10-20 10:14:25,848 DEBUG Engine.jmeter] Using port 4445 for management
+[2016-10-20 10:14:25,848 DEBUG Engine.jmeter.JavaVM] Trying: ['java', '-version']
+[2016-10-20 10:14:25,937 DEBUG Engine.jmeter.JavaVM] JavaVM output: java version "1.8.0_102"
+Java(TM) SE Runtime Environment (build 1.8.0_102-b14)
+Java HotSpot(TM) 64-Bit Server VM (build 25.102-b14, mixed mode)
+
+[2016-10-20 10:14:25,937 DEBUG Engine.jmeter.TclLibrary] Checking if TCL_LIBRARY variable is present in environment
+[2016-10-20 10:14:25,937 DEBUG Engine.jmeter.TclLibrary] TCL_LIBRARY environment variable is present
+[2016-10-20 10:14:25,937 DEBUG Engine.jmeter.JMeter] Trying jmeter: C:\Users\IBM_ADMIN\.bzt\jmeter-taurus\bin\jmeter.bat
+[2016-10-20 10:14:25,940 DEBUG bzt.utils] Executing shell: [u'C:\\Users\\IBM_ADMIN\\.bzt\\jmeter-taurus\\bin\\jmeter.bat', '-j', 'c:\\users\\ibm_ad~1\\appdata\\local\\temp\\jmeterwdlu00log', '--version']
+[2016-10-20 10:14:26,371 DEBUG Engine.jmeter.JMeter] JMeter check: Writing log file to: c:\users\ibm_ad~1\appdata\local\temp\jmeterwdlu00log
+    _    ____   _    ____ _   _ _____       _ __  __ _____ _____ _____ ____     
+   / \  |  _ \ / \  / ___| | | | ____|     | |  \/  | ____|_   _| ____|  _ \   
+  / _ \ | |_) / _ \| |   | |_| |  _|    _  | | |\/| |  _|   | | |  _| | |_) | 
+ / ___ \|  __/ ___ \ |___|  _  | |___  | |_| | |  | | |___  | | | |___|  _ <  
+/_/   \_\_| /_/   \_\____|_| |_|_____|  \___/|_|  |_|_____| |_| |_____|_| \_\ 3.0 r1743807  
+
+Copyright (c) 1999-2016 The Apache Software Foundation
+
+ / None
+[2016-10-20 10:14:26,371 DEBUG Engine] New artifact filename: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\requests.jmx
+[2016-10-20 10:14:26,372 DEBUG JMeterScenarioBuilder] Saving JMX to: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\requests.jmx
+[2016-10-20 10:14:26,375 DEBUG Engine.jmeter] Load: LoadSpec(concurrency=2, throughput=None, ramp_up=10.0, hold=30.0, iterations=0, duration=40.0, steps=None)
+[2016-10-20 10:14:26,375 DEBUG Engine.jmeter] Original threads: 1.0
+[2016-10-20 10:14:26,377 DEBUG Engine] New artifact filename: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:26,378 DEBUG Engine] New artifact filename: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\error.jtl
+[2016-10-20 10:14:26,378 DEBUG Engine.jmeter] Enforcing parent sample for transaction controller
+[2016-10-20 10:14:26,378 DEBUG Engine] New artifact filename: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\modified_requests.jmx
+[2016-10-20 10:14:26,378 DEBUG JMX] Saving JMX to: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\modified_requests.jmx
+[2016-10-20 10:14:26,378 DEBUG Engine.jmeter] Additional properties: defaultdict(None, {u'jmeter.save.saveservice.autoflush': u'true', u'jmeter.save.saveservice.connect_time': u'true', 'user.classpath': 'C:/Users/IBM_ADMIN/Documents/NetBeansProjects/RTP_Project2/src/rtp_project2/LoadTest/2016-10-20_10-14-25.741000', u'summariser.name': u'', u'jmeterengine.force.system.exit': u'true', 'jmeter.save.saveservice.timestamp_format': 'ms', u'mode': u'Stripped', 'jmeterengine.nongui.maxport': 4445, 'jmeterengine.nongui.port': 4445})
+[2016-10-20 10:14:26,378 DEBUG Engine] New artifact filename: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\jmeter-bzt.properties
+[2016-10-20 10:14:26,380 DEBUG Engine.jmeter] Additional system properties defaultdict(None, {'sun.net.inetaddr.ttl': 0})
+[2016-10-20 10:14:26,380 DEBUG Engine] New artifact filename: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\system.properties
+[2016-10-20 10:14:26,381 DEBUG Engine] Module config: final_stats defaultdict(None, {u'class': u'bzt.modules.reporting.FinalStatus'})
+[2016-10-20 10:14:26,381 DEBUG root] Importing module: bzt.modules.reporting
+[2016-10-20 10:14:26,384 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from 'C:\Program Files\Common Files\Python\2.7\lib\site-packages\bzt\modules\reporting.pyc'>
+[2016-10-20 10:14:26,384 DEBUG Engine] Module config: console defaultdict(None, {u'disable': False, u'class': u'bzt.modules.console.ConsoleStatusReporter'})
+[2016-10-20 10:14:26,384 DEBUG root] Importing module: bzt.modules.console
+[2016-10-20 10:14:26,384 DEBUG root] Loading class: 'ConsoleStatusReporter' from <module 'bzt.modules.console' from 'C:\Program Files\Common Files\Python\2.7\lib\site-packages\bzt\modules\console.pyc'>
+[2016-10-20 10:14:26,384 DEBUG Engine.console] Can't use console' screen, trying 'gui'
+[2016-10-20 10:14:26,391 DEBUG Engine.Configuration] Dumping YAML config into C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\effective.yml
+[2016-10-20 10:14:26,414 DEBUG Engine.Configuration] Dumping JSON config into C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\effective.json
+[2016-10-20 10:14:26,414 INFO Engine] Starting...
+[2016-10-20 10:14:26,417 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:14:26,417 DEBUG Engine] Startup <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:14:26,417 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:14:26,417 DEBUG Engine] Startup <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:14:26,417 INFO Engine.console] Waiting for results...
+[2016-10-20 10:14:26,417 DEBUG Engine] Startup <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:14:26,417 DEBUG Engine.local] Delay setup: 0(start-at) + 0(delay) = 0
+[2016-10-20 10:14:26,420 DEBUG Engine.Configuration] Dumping YAML config into C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\effective.yml
+[2016-10-20 10:14:26,443 DEBUG Engine.Configuration] Dumping JSON config into C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\effective.json
+[2016-10-20 10:14:26,444 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:14:26,444 DEBUG bzt.utils] Executing shell: [u'C:\\Users\\IBM_ADMIN\\.bzt\\jmeter-taurus\\bin\\jmeter.bat', '-n', '-t', 'C:\\Users\\IBM_ADMIN\\Documents\\NetBeansProjects\\RTP_Project2\\src\\rtp_project2\\LoadTest\\2016-10-20_10-14-25.741000\\modified_requests.jmx', '-j', 'C:\\Users\\IBM_ADMIN\\Documents\\NetBeansProjects\\RTP_Project2\\src\\rtp_project2\\LoadTest\\2016-10-20_10-14-25.741000\\jmeter.log', '-q', 'C:\\Users\\IBM_ADMIN\\Documents\\NetBeansProjects\\RTP_Project2\\src\\rtp_project2\\LoadTest\\2016-10-20_10-14-25.741000\\jmeter-bzt.properties', '-S', 'C:\\Users\\IBM_ADMIN\\Documents\\NetBeansProjects\\RTP_Project2\\src\\rtp_project2\\LoadTest\\2016-10-20_10-14-25.741000\\system.properties']
+[2016-10-20 10:14:26,447 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:14:26,447 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\error.jtl
+[2016-10-20 10:14:26,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:26,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-10-20 10:14:26,447 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-10-20 10:14:26,447 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-10-20 10:14:26,447 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:14:26,661 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:14:26,661 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:14:26,663 INFO Engine.console] Did not mute console logging
+[2016-10-20 10:14:26,766 INFO Engine.console] Waiting for finish...
+[2016-10-20 10:14:26,780 DEBUG root] Font: (10, 20)
+[2016-10-20 10:14:26,796 DEBUG root] Font: (10, 20)
+[2016-10-20 10:14:26,799 DEBUG root] Font: (10, 20)
+[2016-10-20 10:14:26,813 DEBUG Engine] Iteration took 0.370 sec, sleeping for 0.630 sec...
+[2016-10-20 10:14:27,444 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:14:27,444 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:14:27,444 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\error.jtl
+[2016-10-20 10:14:27,444 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Opening file: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:27,444 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:27,444 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 1 / 111 bytes (at speed 1048576)
+[2016-10-20 10:14:27,444 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Analyzed header line: ['timeStamp', 'elapsed', 'label', 'responseCode', 'responseMessage', 'threadName', 'success', 'grpThreads', 'allThreads', 'Latency', 'Hostname']
+[2016-10-20 10:14:27,446 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-10-20 10:14:27,446 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-10-20 10:14:27,446 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:14:27,453 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:14:27,453 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:14:27,476 DEBUG Engine] Iteration took 0.033 sec, sleeping for 0.967 sec...
+[2016-10-20 10:14:28,444 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:14:28,444 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:14:28,444 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\error.jtl
+[2016-10-20 10:14:28,444 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:28,444 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-10-20 10:14:28,444 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-10-20 10:14:28,444 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-10-20 10:14:28,444 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:14:28,451 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:14:28,451 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:14:28,473 DEBUG Engine] Iteration took 0.030 sec, sleeping for 0.970 sec...
+[2016-10-20 10:14:29,444 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:14:29,444 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:14:29,444 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\error.jtl
+[2016-10-20 10:14:29,444 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:29,444 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-10-20 10:14:29,444 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-10-20 10:14:29,444 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-10-20 10:14:29,444 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:14:29,453 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:14:29,453 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:14:29,490 DEBUG Engine] Iteration took 0.046 sec, sleeping for 0.954 sec...
+[2016-10-20 10:14:30,443 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:14:30,443 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:14:30,443 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\error.jtl
+[2016-10-20 10:14:30,443 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:30,443 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 1 / 85 bytes (at speed 1048576)
+[2016-10-20 10:14:30,443 DEBUG Engine.jmeter.JTLReader] Buffer len: 1
+[2016-10-20 10:14:30,443 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-10-20 10:14:30,443 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:14:30,451 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:14:30,451 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:14:30,474 DEBUG Engine] Iteration took 0.032 sec, sleeping for 0.968 sec...
+[2016-10-20 10:14:31,443 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:14:31,443 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:14:31,443 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\error.jtl
+[2016-10-20 10:14:31,443 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:31,443 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 3 / 263 bytes (at speed 1048576)
+[2016-10-20 10:14:31,443 DEBUG Engine.jmeter.JTLReader] Buffer len: 2
+[2016-10-20 10:14:31,443 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972867
+[2016-10-20 10:14:31,444 DEBUG Engine.consolidator] Consolidator buffer[1]: [1476972867]
+[2016-10-20 10:14:31,444 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:14:31,451 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:14:31,451 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:14:31,474 DEBUG Engine] Iteration took 0.032 sec, sleeping for 0.968 sec...
+[2016-10-20 10:14:32,443 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:14:32,443 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:14:32,443 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\error.jtl
+[2016-10-20 10:14:32,443 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:32,443 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 1 / 84 bytes (at speed 1048576)
+[2016-10-20 10:14:32,443 DEBUG Engine.jmeter.JTLReader] Buffer len: 2
+[2016-10-20 10:14:32,443 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 6s
+[2016-10-20 10:14:32,444 DEBUG Engine.consolidator] Consolidator buffer[1]: [1476972867]
+[2016-10-20 10:14:32,444 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:14:32,451 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:14:32,453 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:14:32,476 DEBUG Engine] Iteration took 0.033 sec, sleeping for 0.967 sec...
+[2016-10-20 10:14:33,443 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:14:33,443 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:14:33,443 DEBUG Engine.jmeter.JTLErrorsReader] Opening C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\error.jtl
+[2016-10-20 10:14:33,446 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:33,446 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 6 / 655 bytes (at speed 1048576)
+[2016-10-20 10:14:33,446 DEBUG Engine.jmeter.JTLReader] Buffer len: 4
+[2016-10-20 10:14:33,446 DEBUG Engine.consolidator] Consolidator buffer[1]: [1476972867]
+[2016-10-20 10:14:33,446 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:14:33,453 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:14:33,453 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:14:33,476 DEBUG Engine] Iteration took 0.034 sec, sleeping for 0.966 sec...
+[2016-10-20 10:14:34,443 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:14:34,443 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:14:34,443 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:34,443 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 5 / 430 bytes (at speed 1048576)
+[2016-10-20 10:14:34,444 DEBUG Engine.jmeter.JTLReader] Buffer len: 4
+[2016-10-20 10:14:34,444 DEBUG Engine.consolidator] Consolidator buffer[1]: [1476972867]
+[2016-10-20 10:14:34,444 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:14:34,451 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:14:34,451 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:14:34,474 DEBUG Engine] Iteration took 0.032 sec, sleeping for 0.968 sec...
+[2016-10-20 10:14:35,443 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:14:35,443 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:14:35,443 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:35,444 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 8 / 817 bytes (at speed 1048576)
+[2016-10-20 10:14:35,444 DEBUG Engine.jmeter.JTLReader] Buffer len: 5
+[2016-10-20 10:14:35,444 DEBUG Engine.consolidator] Consolidator buffer[1]: [1476972867]
+[2016-10-20 10:14:35,444 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:14:35,451 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:14:35,451 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:14:35,476 DEBUG Engine] Iteration took 0.034 sec, sleeping for 0.966 sec...
+[2016-10-20 10:14:36,444 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:14:36,444 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:14:36,444 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:36,444 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 4 / 796 bytes (at speed 1048576)
+[2016-10-20 10:14:36,444 DEBUG Engine.jmeter.JTLReader] Buffer len: 6
+[2016-10-20 10:14:36,444 DEBUG Engine.consolidator] Consolidator buffer[1]: [1476972867]
+[2016-10-20 10:14:36,444 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:14:36,454 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:14:36,454 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:14:36,476 DEBUG Engine] Iteration took 0.033 sec, sleeping for 0.967 sec...
+[2016-10-20 10:14:37,446 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:14:37,446 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:14:37,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:37,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 8 / 692 bytes (at speed 1048576)
+[2016-10-20 10:14:37,447 DEBUG Engine.jmeter.JTLReader] Buffer len: 8
+[2016-10-20 10:14:37,447 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972870
+[2016-10-20 10:14:37,447 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972871
+[2016-10-20 10:14:37,448 DEBUG Engine.consolidator] Consolidator buffer[3]: [1476972867, 1476972870, 1476972871]
+[2016-10-20 10:14:37,448 DEBUG Engine.consolidator] Merging into 1476972867
+[2016-10-20 10:14:37,450 DEBUG Engine.consolidator] Merging 1476972867
+[2016-10-20 10:14:37,450 DEBUG Engine.consolidator] Processed datapoint: 1476972867/None
+[2016-10-20 10:14:37,450 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:14:37,457 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:14:37,457 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:14:37,494 DEBUG Engine] Iteration took 0.049 sec, sleeping for 0.951 sec...
+[2016-10-20 10:14:38,446 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:14:38,446 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:14:38,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:38,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 5 / 889 bytes (at speed 1048576)
+[2016-10-20 10:14:38,447 DEBUG Engine.jmeter.JTLReader] Buffer len: 7
+[2016-10-20 10:14:38,447 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972872
+[2016-10-20 10:14:38,447 DEBUG Engine.consolidator] Consolidator buffer[3]: [1476972872, 1476972870, 1476972871]
+[2016-10-20 10:14:38,448 DEBUG Engine.consolidator] Merging into 1476972870
+[2016-10-20 10:14:38,448 DEBUG Engine.consolidator] Merging 1476972870
+[2016-10-20 10:14:38,450 DEBUG Engine.consolidator] Processed datapoint: 1476972870/None
+[2016-10-20 10:14:38,450 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:14:38,459 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:14:38,460 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:14:38,490 DEBUG Engine] Iteration took 0.044 sec, sleeping for 0.956 sec...
+[2016-10-20 10:14:39,446 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:14:39,446 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:14:39,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:39,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 9 / 899 bytes (at speed 1048576)
+[2016-10-20 10:14:39,447 DEBUG Engine.jmeter.JTLReader] Buffer len: 7
+[2016-10-20 10:14:39,447 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972873
+[2016-10-20 10:14:39,447 DEBUG Engine.consolidator] Consolidator buffer[3]: [1476972872, 1476972873, 1476972871]
+[2016-10-20 10:14:39,447 DEBUG Engine.consolidator] Merging into 1476972871
+[2016-10-20 10:14:39,447 DEBUG Engine.consolidator] Merging 1476972871
+[2016-10-20 10:14:39,450 DEBUG Engine.consolidator] Processed datapoint: 1476972871/None
+[2016-10-20 10:14:39,450 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:14:39,460 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:14:39,460 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:14:39,493 DEBUG Engine] Iteration took 0.047 sec, sleeping for 0.953 sec...
+[2016-10-20 10:14:40,446 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:14:40,446 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:14:40,446 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:40,446 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 3 / 256 bytes (at speed 1048576)
+[2016-10-20 10:14:40,446 DEBUG Engine.jmeter.JTLReader] Buffer len: 6
+[2016-10-20 10:14:40,446 DEBUG Engine.consolidator] Consolidator buffer[2]: [1476972872, 1476972873]
+[2016-10-20 10:14:40,446 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:14:40,454 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:14:40,454 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:14:40,484 DEBUG Engine] Iteration took 0.039 sec, sleeping for 0.961 sec...
+[2016-10-20 10:14:41,447 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:14:41,447 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:14:41,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:41,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 10 / 1000 bytes (at speed 1048576)
+[2016-10-20 10:14:41,447 DEBUG Engine.jmeter.JTLReader] Buffer len: 8
+[2016-10-20 10:14:41,447 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972874
+[2016-10-20 10:14:41,448 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972875
+[2016-10-20 10:14:41,450 DEBUG Engine.consolidator] Consolidator buffer[4]: [1476972872, 1476972873, 1476972874, 1476972875]
+[2016-10-20 10:14:41,450 DEBUG Engine.consolidator] Merging into 1476972872
+[2016-10-20 10:14:41,450 DEBUG Engine.consolidator] Merging 1476972872
+[2016-10-20 10:14:41,453 DEBUG Engine.consolidator] Processed datapoint: 1476972872/None
+[2016-10-20 10:14:41,454 DEBUG Engine.consolidator] Merging into 1476972873
+[2016-10-20 10:14:41,454 DEBUG Engine.consolidator] Merging 1476972873
+[2016-10-20 10:14:41,459 DEBUG Engine.consolidator] Processed datapoint: 1476972873/None
+[2016-10-20 10:14:41,459 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:14:41,466 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:14:41,466 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:14:41,500 DEBUG Engine] Iteration took 0.052 sec, sleeping for 0.948 sec...
+[2016-10-20 10:14:42,447 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:14:42,447 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:14:42,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:42,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 6 / 1102 bytes (at speed 1048576)
+[2016-10-20 10:14:42,447 DEBUG Engine.jmeter.JTLReader] Buffer len: 6
+[2016-10-20 10:14:42,447 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 3s
+[2016-10-20 10:14:42,450 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972876
+[2016-10-20 10:14:42,451 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972877
+[2016-10-20 10:14:42,453 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972878
+[2016-10-20 10:14:42,454 DEBUG Engine.consolidator] Consolidator buffer[5]: [1476972874, 1476972875, 1476972876, 1476972877, 1476972878]
+[2016-10-20 10:14:42,454 DEBUG Engine.consolidator] Merging into 1476972874
+[2016-10-20 10:14:42,454 DEBUG Engine.consolidator] Merging 1476972874
+[2016-10-20 10:14:42,457 DEBUG Engine.consolidator] Processed datapoint: 1476972874/None
+[2016-10-20 10:14:42,457 DEBUG Engine.consolidator] Merging into 1476972875
+[2016-10-20 10:14:42,459 DEBUG Engine.consolidator] Merging 1476972875
+[2016-10-20 10:14:42,461 DEBUG Engine.consolidator] Processed datapoint: 1476972875/None
+[2016-10-20 10:14:42,461 DEBUG Engine.consolidator] Merging into 1476972876
+[2016-10-20 10:14:42,461 DEBUG Engine.consolidator] Merging 1476972876
+[2016-10-20 10:14:42,464 DEBUG Engine.consolidator] Processed datapoint: 1476972876/None
+[2016-10-20 10:14:42,464 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:14:42,473 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:14:42,473 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:14:42,506 DEBUG Engine] Iteration took 0.060 sec, sleeping for 0.940 sec...
+[2016-10-20 10:14:43,447 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:14:43,447 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:14:43,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:43,448 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 8 / 830 bytes (at speed 1048576)
+[2016-10-20 10:14:43,448 DEBUG Engine.jmeter.JTLReader] Buffer len: 5
+[2016-10-20 10:14:43,448 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972879
+[2016-10-20 10:14:43,450 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972880
+[2016-10-20 10:14:43,451 DEBUG Engine.consolidator] Consolidator buffer[4]: [1476972880, 1476972877, 1476972878, 1476972879]
+[2016-10-20 10:14:43,451 DEBUG Engine.consolidator] Merging into 1476972877
+[2016-10-20 10:14:43,451 DEBUG Engine.consolidator] Merging 1476972877
+[2016-10-20 10:14:43,456 DEBUG Engine.consolidator] Processed datapoint: 1476972877/None
+[2016-10-20 10:14:43,456 DEBUG Engine.consolidator] Merging into 1476972878
+[2016-10-20 10:14:43,456 DEBUG Engine.consolidator] Merging 1476972878
+[2016-10-20 10:14:43,459 DEBUG Engine.consolidator] Processed datapoint: 1476972878/None
+[2016-10-20 10:14:43,459 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:14:43,467 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:14:43,467 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:14:43,502 DEBUG Engine] Iteration took 0.054 sec, sleeping for 0.946 sec...
+[2016-10-20 10:14:44,447 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:14:44,447 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:14:44,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:44,448 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 6 / 645 bytes (at speed 1048576)
+[2016-10-20 10:14:44,448 DEBUG Engine.jmeter.JTLReader] Buffer len: 4
+[2016-10-20 10:14:44,448 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 2s
+[2016-10-20 10:14:44,451 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972881
+[2016-10-20 10:14:44,453 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972882
+[2016-10-20 10:14:44,456 DEBUG Engine.consolidator] Consolidator buffer[4]: [1476972879, 1476972880, 1476972881, 1476972882]
+[2016-10-20 10:14:44,456 DEBUG Engine.consolidator] Merging into 1476972879
+[2016-10-20 10:14:44,456 DEBUG Engine.consolidator] Merging 1476972879
+[2016-10-20 10:14:44,460 DEBUG Engine.consolidator] Processed datapoint: 1476972879/None
+[2016-10-20 10:14:44,460 DEBUG Engine.consolidator] Merging into 1476972880
+[2016-10-20 10:14:44,460 DEBUG Engine.consolidator] Merging 1476972880
+[2016-10-20 10:14:44,463 DEBUG Engine.consolidator] Processed datapoint: 1476972880/None
+[2016-10-20 10:14:44,463 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:14:44,471 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:14:44,471 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:14:44,509 DEBUG Engine] Iteration took 0.061 sec, sleeping for 0.939 sec...
+[2016-10-20 10:14:45,447 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:14:45,447 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:14:45,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:45,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 7 / 729 bytes (at speed 1048576)
+[2016-10-20 10:14:45,447 DEBUG Engine.jmeter.JTLReader] Buffer len: 3
+[2016-10-20 10:14:45,447 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972883
+[2016-10-20 10:14:45,450 DEBUG Engine.consolidator] Consolidator buffer[3]: [1476972881, 1476972882, 1476972883]
+[2016-10-20 10:14:45,450 DEBUG Engine.consolidator] Merging into 1476972881
+[2016-10-20 10:14:45,450 DEBUG Engine.consolidator] Merging 1476972881
+[2016-10-20 10:14:45,453 DEBUG Engine.consolidator] Processed datapoint: 1476972881/None
+[2016-10-20 10:14:45,453 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:14:45,461 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:14:45,461 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:14:45,500 DEBUG Engine] Iteration took 0.053 sec, sleeping for 0.947 sec...
+[2016-10-20 10:14:46,447 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:14:46,447 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:14:46,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:46,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 9 / 911 bytes (at speed 1048576)
+[2016-10-20 10:14:46,447 DEBUG Engine.jmeter.JTLReader] Buffer len: 3
+[2016-10-20 10:14:46,447 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972884
+[2016-10-20 10:14:46,448 DEBUG Engine.consolidator] Consolidator buffer[3]: [1476972882, 1476972883, 1476972884]
+[2016-10-20 10:14:46,448 DEBUG Engine.consolidator] Merging into 1476972882
+[2016-10-20 10:14:46,448 DEBUG Engine.consolidator] Merging 1476972882
+[2016-10-20 10:14:46,453 DEBUG Engine.consolidator] Processed datapoint: 1476972882/None
+[2016-10-20 10:14:46,453 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:14:46,460 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:14:46,461 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:14:46,500 DEBUG Engine] Iteration took 0.053 sec, sleeping for 0.947 sec...
+[2016-10-20 10:14:47,447 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:14:47,447 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:14:47,448 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:47,448 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 11 / 1201 bytes (at speed 1048576)
+[2016-10-20 10:14:47,448 DEBUG Engine.jmeter.JTLReader] Buffer len: 3
+[2016-10-20 10:14:47,448 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972885
+[2016-10-20 10:14:47,450 DEBUG Engine.consolidator] Consolidator buffer[3]: [1476972883, 1476972884, 1476972885]
+[2016-10-20 10:14:47,450 DEBUG Engine.consolidator] Merging into 1476972883
+[2016-10-20 10:14:47,450 DEBUG Engine.consolidator] Merging 1476972883
+[2016-10-20 10:14:47,454 DEBUG Engine.consolidator] Processed datapoint: 1476972883/None
+[2016-10-20 10:14:47,454 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:14:47,461 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:14:47,461 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:14:47,500 DEBUG Engine] Iteration took 0.052 sec, sleeping for 0.948 sec...
+[2016-10-20 10:14:48,447 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:14:48,447 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:14:48,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:48,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 9 / 910 bytes (at speed 1048576)
+[2016-10-20 10:14:48,447 DEBUG Engine.jmeter.JTLReader] Buffer len: 3
+[2016-10-20 10:14:48,447 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972886
+[2016-10-20 10:14:48,450 DEBUG Engine.consolidator] Consolidator buffer[3]: [1476972884, 1476972885, 1476972886]
+[2016-10-20 10:14:48,450 DEBUG Engine.consolidator] Merging into 1476972884
+[2016-10-20 10:14:48,450 DEBUG Engine.consolidator] Merging 1476972884
+[2016-10-20 10:14:48,453 DEBUG Engine.consolidator] Processed datapoint: 1476972884/None
+[2016-10-20 10:14:48,453 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:14:48,461 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:14:48,461 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:14:48,500 DEBUG Engine] Iteration took 0.054 sec, sleeping for 0.946 sec...
+[2016-10-20 10:14:49,447 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:14:49,447 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:14:49,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:49,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 3 / 255 bytes (at speed 1048576)
+[2016-10-20 10:14:49,447 DEBUG Engine.jmeter.JTLReader] Buffer len: 3
+[2016-10-20 10:14:49,447 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972887
+[2016-10-20 10:14:49,448 DEBUG Engine.consolidator] Consolidator buffer[3]: [1476972885, 1476972886, 1476972887]
+[2016-10-20 10:14:49,448 DEBUG Engine.consolidator] Merging into 1476972885
+[2016-10-20 10:14:49,448 DEBUG Engine.consolidator] Merging 1476972885
+[2016-10-20 10:14:49,453 DEBUG Engine.consolidator] Processed datapoint: 1476972885/None
+[2016-10-20 10:14:49,453 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:14:49,460 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:14:49,460 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:14:49,499 DEBUG Engine] Iteration took 0.052 sec, sleeping for 0.948 sec...
+[2016-10-20 10:14:50,447 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:14:50,447 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:14:50,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:50,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 6 / 645 bytes (at speed 1048576)
+[2016-10-20 10:14:50,447 DEBUG Engine.jmeter.JTLReader] Buffer len: 3
+[2016-10-20 10:14:50,447 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972888
+[2016-10-20 10:14:50,448 DEBUG Engine.consolidator] Consolidator buffer[3]: [1476972886, 1476972887, 1476972888]
+[2016-10-20 10:14:50,448 DEBUG Engine.consolidator] Merging into 1476972886
+[2016-10-20 10:14:50,448 DEBUG Engine.consolidator] Merging 1476972886
+[2016-10-20 10:14:50,453 DEBUG Engine.consolidator] Processed datapoint: 1476972886/None
+[2016-10-20 10:14:50,453 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:14:50,460 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:14:50,460 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:14:50,500 DEBUG Engine] Iteration took 0.053 sec, sleeping for 0.947 sec...
+[2016-10-20 10:14:51,447 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:14:51,447 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:14:51,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:51,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 3 / 265 bytes (at speed 1048576)
+[2016-10-20 10:14:51,447 DEBUG Engine.jmeter.JTLReader] Buffer len: 3
+[2016-10-20 10:14:51,447 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972889
+[2016-10-20 10:14:51,448 DEBUG Engine.consolidator] Consolidator buffer[3]: [1476972887, 1476972888, 1476972889]
+[2016-10-20 10:14:51,448 DEBUG Engine.consolidator] Merging into 1476972887
+[2016-10-20 10:14:51,448 DEBUG Engine.consolidator] Merging 1476972887
+[2016-10-20 10:14:51,453 DEBUG Engine.consolidator] Processed datapoint: 1476972887/None
+[2016-10-20 10:14:51,453 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:14:51,461 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:14:51,463 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:14:51,502 DEBUG Engine] Iteration took 0.055 sec, sleeping for 0.945 sec...
+[2016-10-20 10:14:52,446 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:14:52,446 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:14:52,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:52,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 11 / 1682 bytes (at speed 1048576)
+[2016-10-20 10:14:52,447 DEBUG Engine.jmeter.JTLReader] Putting sample 1476972888 into 1476972890
+[2016-10-20 10:14:52,447 DEBUG Engine.jmeter.JTLReader] Buffer len: 3
+[2016-10-20 10:14:52,447 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972890
+[2016-10-20 10:14:52,448 DEBUG Engine.consolidator] Consolidator buffer[3]: [1476972888, 1476972889, 1476972890]
+[2016-10-20 10:14:52,448 DEBUG Engine.consolidator] Merging into 1476972888
+[2016-10-20 10:14:52,448 DEBUG Engine.consolidator] Merging 1476972888
+[2016-10-20 10:14:52,453 DEBUG Engine.consolidator] Processed datapoint: 1476972888/None
+[2016-10-20 10:14:52,453 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:14:52,460 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:14:52,460 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:14:52,500 DEBUG Engine] Iteration took 0.054 sec, sleeping for 0.946 sec...
+[2016-10-20 10:14:53,447 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:14:53,447 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:14:53,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:53,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 2 / 172 bytes (at speed 1048576)
+[2016-10-20 10:14:53,447 DEBUG Engine.jmeter.JTLReader] Buffer len: 2
+[2016-10-20 10:14:53,448 DEBUG Engine.consolidator] Consolidator buffer[2]: [1476972889, 1476972890]
+[2016-10-20 10:14:53,448 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:14:53,456 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:14:53,456 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:14:53,494 DEBUG Engine] Iteration took 0.048 sec, sleeping for 0.952 sec...
+[2016-10-20 10:14:54,447 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:14:54,447 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:14:54,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:54,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 11 / 1204 bytes (at speed 1048576)
+[2016-10-20 10:14:54,447 DEBUG Engine.jmeter.JTLReader] Buffer len: 4
+[2016-10-20 10:14:54,447 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972891
+[2016-10-20 10:14:54,450 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972892
+[2016-10-20 10:14:54,450 DEBUG Engine.consolidator] Consolidator buffer[4]: [1476972889, 1476972890, 1476972891, 1476972892]
+[2016-10-20 10:14:54,450 DEBUG Engine.consolidator] Merging into 1476972889
+[2016-10-20 10:14:54,451 DEBUG Engine.consolidator] Merging 1476972889
+[2016-10-20 10:14:54,456 DEBUG Engine.consolidator] Processed datapoint: 1476972889/None
+[2016-10-20 10:14:54,456 DEBUG Engine.consolidator] Merging into 1476972890
+[2016-10-20 10:14:54,456 DEBUG Engine.consolidator] Merging 1476972890
+[2016-10-20 10:14:54,460 DEBUG Engine.consolidator] Processed datapoint: 1476972890/None
+[2016-10-20 10:14:54,460 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:14:54,467 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:14:54,467 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:14:54,507 DEBUG Engine] Iteration took 0.061 sec, sleeping for 0.939 sec...
+[2016-10-20 10:14:55,447 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:14:55,447 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:14:55,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:55,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 5 / 435 bytes (at speed 1048576)
+[2016-10-20 10:14:55,447 DEBUG Engine.jmeter.JTLReader] Buffer len: 2
+[2016-10-20 10:14:55,448 DEBUG Engine.consolidator] Consolidator buffer[2]: [1476972891, 1476972892]
+[2016-10-20 10:14:55,448 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:14:55,459 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:14:55,459 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:14:55,500 DEBUG Engine] Iteration took 0.053 sec, sleeping for 0.947 sec...
+[2016-10-20 10:14:56,447 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:14:56,447 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:14:56,448 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:56,448 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 11 / 1204 bytes (at speed 1048576)
+[2016-10-20 10:14:56,448 DEBUG Engine.jmeter.JTLReader] Buffer len: 4
+[2016-10-20 10:14:56,448 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972893
+[2016-10-20 10:14:56,450 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972894
+[2016-10-20 10:14:56,453 DEBUG Engine.consolidator] Consolidator buffer[4]: [1476972891, 1476972892, 1476972893, 1476972894]
+[2016-10-20 10:14:56,453 DEBUG Engine.consolidator] Merging into 1476972891
+[2016-10-20 10:14:56,453 DEBUG Engine.consolidator] Merging 1476972891
+[2016-10-20 10:14:56,457 DEBUG Engine.consolidator] Processed datapoint: 1476972891/None
+[2016-10-20 10:14:56,457 DEBUG Engine.consolidator] Merging into 1476972892
+[2016-10-20 10:14:56,457 DEBUG Engine.consolidator] Merging 1476972892
+[2016-10-20 10:14:56,460 DEBUG Engine.consolidator] Processed datapoint: 1476972892/None
+[2016-10-20 10:14:56,461 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:14:56,470 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:14:56,470 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:14:56,516 DEBUG Engine] Iteration took 0.069 sec, sleeping for 0.931 sec...
+[2016-10-20 10:14:57,447 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:14:57,447 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:14:57,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:57,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 13 / 1381 bytes (at speed 1048576)
+[2016-10-20 10:14:57,447 DEBUG Engine.jmeter.JTLReader] Buffer len: 3
+[2016-10-20 10:14:57,447 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972895
+[2016-10-20 10:14:57,448 DEBUG Engine.consolidator] Consolidator buffer[3]: [1476972893, 1476972894, 1476972895]
+[2016-10-20 10:14:57,448 DEBUG Engine.consolidator] Merging into 1476972893
+[2016-10-20 10:14:57,448 DEBUG Engine.consolidator] Merging 1476972893
+[2016-10-20 10:14:57,453 DEBUG Engine.consolidator] Processed datapoint: 1476972893/None
+[2016-10-20 10:14:57,453 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:14:57,460 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:14:57,461 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:14:57,503 DEBUG Engine] Iteration took 0.056 sec, sleeping for 0.944 sec...
+[2016-10-20 10:14:58,447 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:14:58,447 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:14:58,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:58,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-10-20 10:14:58,447 DEBUG Engine.jmeter.JTLReader] Buffer len: 2
+[2016-10-20 10:14:58,447 DEBUG Engine.consolidator] Consolidator buffer[2]: [1476972894, 1476972895]
+[2016-10-20 10:14:58,447 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:14:58,457 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:14:58,457 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:14:58,499 DEBUG Engine] Iteration took 0.051 sec, sleeping for 0.949 sec...
+[2016-10-20 10:14:59,447 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:14:59,447 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:14:59,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:14:59,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 9 / 904 bytes (at speed 1048576)
+[2016-10-20 10:14:59,447 DEBUG Engine.jmeter.JTLReader] Buffer len: 4
+[2016-10-20 10:14:59,447 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972896
+[2016-10-20 10:14:59,450 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972897
+[2016-10-20 10:14:59,450 DEBUG Engine.consolidator] Consolidator buffer[4]: [1476972896, 1476972897, 1476972894, 1476972895]
+[2016-10-20 10:14:59,450 DEBUG Engine.consolidator] Merging into 1476972894
+[2016-10-20 10:14:59,450 DEBUG Engine.consolidator] Merging 1476972894
+[2016-10-20 10:14:59,454 DEBUG Engine.consolidator] Processed datapoint: 1476972894/None
+[2016-10-20 10:14:59,456 DEBUG Engine.consolidator] Merging into 1476972895
+[2016-10-20 10:14:59,456 DEBUG Engine.consolidator] Merging 1476972895
+[2016-10-20 10:14:59,459 DEBUG Engine.consolidator] Processed datapoint: 1476972895/None
+[2016-10-20 10:14:59,459 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:14:59,467 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:14:59,467 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:14:59,513 DEBUG Engine] Iteration took 0.067 sec, sleeping for 0.933 sec...
+[2016-10-20 10:15:00,447 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:15:00,447 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:15:00,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:15:00,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 6 / 1170 bytes (at speed 1048576)
+[2016-10-20 10:15:00,447 DEBUG Engine.jmeter.JTLReader] Buffer len: 3
+[2016-10-20 10:15:00,447 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972898
+[2016-10-20 10:15:00,450 DEBUG Engine.consolidator] Consolidator buffer[3]: [1476972896, 1476972897, 1476972898]
+[2016-10-20 10:15:00,450 DEBUG Engine.consolidator] Merging into 1476972896
+[2016-10-20 10:15:00,450 DEBUG Engine.consolidator] Merging 1476972896
+[2016-10-20 10:15:00,454 DEBUG Engine.consolidator] Processed datapoint: 1476972896/None
+[2016-10-20 10:15:00,454 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:15:00,463 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:15:00,463 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:15:00,509 DEBUG Engine] Iteration took 0.062 sec, sleeping for 0.938 sec...
+[2016-10-20 10:15:01,446 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:15:01,446 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:15:01,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:15:01,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 4 / 621 bytes (at speed 1048576)
+[2016-10-20 10:15:01,447 DEBUG Engine.jmeter.JTLReader] Buffer len: 3
+[2016-10-20 10:15:01,447 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972899
+[2016-10-20 10:15:01,448 DEBUG Engine.consolidator] Consolidator buffer[3]: [1476972897, 1476972898, 1476972899]
+[2016-10-20 10:15:01,448 DEBUG Engine.consolidator] Merging into 1476972897
+[2016-10-20 10:15:01,448 DEBUG Engine.consolidator] Merging 1476972897
+[2016-10-20 10:15:01,453 DEBUG Engine.consolidator] Processed datapoint: 1476972897/None
+[2016-10-20 10:15:01,453 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:15:01,460 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:15:01,460 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:15:01,505 DEBUG Engine] Iteration took 0.058 sec, sleeping for 0.942 sec...
+[2016-10-20 10:15:02,447 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:15:02,447 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:15:02,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:15:02,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 8 / 827 bytes (at speed 1048576)
+[2016-10-20 10:15:02,447 DEBUG Engine.jmeter.JTLReader] Buffer len: 3
+[2016-10-20 10:15:02,447 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972900
+[2016-10-20 10:15:02,450 DEBUG Engine.consolidator] Consolidator buffer[3]: [1476972898, 1476972899, 1476972900]
+[2016-10-20 10:15:02,450 DEBUG Engine.consolidator] Merging into 1476972898
+[2016-10-20 10:15:02,450 DEBUG Engine.consolidator] Merging 1476972898
+[2016-10-20 10:15:02,453 DEBUG Engine.consolidator] Processed datapoint: 1476972898/None
+[2016-10-20 10:15:02,453 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:15:02,460 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:15:02,460 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:15:02,506 DEBUG Engine] Iteration took 0.060 sec, sleeping for 0.940 sec...
+[2016-10-20 10:15:03,447 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:15:03,447 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:15:03,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:15:03,448 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 6 / 1102 bytes (at speed 1048576)
+[2016-10-20 10:15:03,448 DEBUG Engine.jmeter.JTLReader] Buffer len: 3
+[2016-10-20 10:15:03,448 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972901
+[2016-10-20 10:15:03,450 DEBUG Engine.consolidator] Consolidator buffer[3]: [1476972899, 1476972900, 1476972901]
+[2016-10-20 10:15:03,450 DEBUG Engine.consolidator] Merging into 1476972899
+[2016-10-20 10:15:03,450 DEBUG Engine.consolidator] Merging 1476972899
+[2016-10-20 10:15:03,454 DEBUG Engine.consolidator] Processed datapoint: 1476972899/None
+[2016-10-20 10:15:03,454 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:15:03,464 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:15:03,464 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:15:03,509 DEBUG Engine] Iteration took 0.063 sec, sleeping for 0.937 sec...
+[2016-10-20 10:15:04,447 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:15:04,447 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:15:04,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:15:04,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 11 / 1083 bytes (at speed 1048576)
+[2016-10-20 10:15:04,447 DEBUG Engine.jmeter.JTLReader] Buffer len: 3
+[2016-10-20 10:15:04,447 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972902
+[2016-10-20 10:15:04,450 DEBUG Engine.consolidator] Consolidator buffer[3]: [1476972900, 1476972901, 1476972902]
+[2016-10-20 10:15:04,450 DEBUG Engine.consolidator] Merging into 1476972900
+[2016-10-20 10:15:04,450 DEBUG Engine.consolidator] Merging 1476972900
+[2016-10-20 10:15:04,453 DEBUG Engine.consolidator] Processed datapoint: 1476972900/None
+[2016-10-20 10:15:04,453 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:15:04,461 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:15:04,461 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:15:04,506 DEBUG Engine] Iteration took 0.060 sec, sleeping for 0.940 sec...
+[2016-10-20 10:15:05,447 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:15:05,447 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:15:05,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:15:05,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 5 / 1087 bytes (at speed 1048576)
+[2016-10-20 10:15:05,447 DEBUG Engine.jmeter.JTLReader] Buffer len: 3
+[2016-10-20 10:15:05,447 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972903
+[2016-10-20 10:15:05,450 DEBUG Engine.consolidator] Consolidator buffer[3]: [1476972901, 1476972902, 1476972903]
+[2016-10-20 10:15:05,450 DEBUG Engine.consolidator] Merging into 1476972901
+[2016-10-20 10:15:05,450 DEBUG Engine.consolidator] Merging 1476972901
+[2016-10-20 10:15:05,453 DEBUG Engine.consolidator] Processed datapoint: 1476972901/None
+[2016-10-20 10:15:05,453 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:15:05,463 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:15:05,463 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:15:05,506 DEBUG Engine] Iteration took 0.059 sec, sleeping for 0.941 sec...
+[2016-10-20 10:15:06,447 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:15:06,447 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:15:06,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:15:06,447 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 9 / 1018 bytes (at speed 1048576)
+[2016-10-20 10:15:06,447 DEBUG Engine.jmeter.JTLReader] Buffer len: 3
+[2016-10-20 10:15:06,447 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972904
+[2016-10-20 10:15:06,450 DEBUG Engine.consolidator] Consolidator buffer[3]: [1476972902, 1476972903, 1476972904]
+[2016-10-20 10:15:06,450 DEBUG Engine.consolidator] Merging into 1476972902
+[2016-10-20 10:15:06,450 DEBUG Engine.consolidator] Merging 1476972902
+[2016-10-20 10:15:06,454 DEBUG Engine.consolidator] Processed datapoint: 1476972902/None
+[2016-10-20 10:15:06,454 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:15:06,463 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:15:06,463 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:15:06,512 DEBUG Engine] Iteration took 0.065 sec, sleeping for 0.935 sec...
+[2016-10-20 10:15:07,446 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:15:07,446 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:15:07,446 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:15:07,446 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 8 / 827 bytes (at speed 1048576)
+[2016-10-20 10:15:07,447 DEBUG Engine.jmeter.JTLReader] Buffer len: 3
+[2016-10-20 10:15:07,447 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972905
+[2016-10-20 10:15:07,448 DEBUG Engine.consolidator] Consolidator buffer[3]: [1476972903, 1476972904, 1476972905]
+[2016-10-20 10:15:07,448 DEBUG Engine.consolidator] Merging into 1476972903
+[2016-10-20 10:15:07,448 DEBUG Engine.consolidator] Merging 1476972903
+[2016-10-20 10:15:07,453 DEBUG Engine.consolidator] Processed datapoint: 1476972903/None
+[2016-10-20 10:15:07,453 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:15:07,460 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:15:07,461 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:15:07,507 DEBUG Engine] Iteration took 0.062 sec, sleeping for 0.938 sec...
+[2016-10-20 10:15:08,446 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003C34048>
+[2016-10-20 10:15:08,446 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003C36208>
+[2016-10-20 10:15:08,446 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:15:08,446 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 1 / 84 bytes (at speed 1048576)
+[2016-10-20 10:15:08,446 DEBUG Engine.jmeter.JTLReader] Buffer len: 2
+[2016-10-20 10:15:08,446 DEBUG Engine.consolidator] Consolidator buffer[2]: [1476972904, 1476972905]
+[2016-10-20 10:15:08,447 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003C34128>
+[2016-10-20 10:15:08,454 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003F2B518>
+[2016-10-20 10:15:08,454 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003F47438>
+[2016-10-20 10:15:08,500 DEBUG Engine.Configuration] Dumping YAML config into C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\effective.yml
+[2016-10-20 10:15:08,523 DEBUG Engine.Configuration] Dumping JSON config into C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\effective.json
+[2016-10-20 10:15:08,523 WARNING Engine] Please wait for graceful shutdown...
+[2016-10-20 10:15:08,526 INFO Engine] Shutting down...
+[2016-10-20 10:15:08,526 DEBUG Engine.local] Shutdown jmeter/citycool
+[2016-10-20 10:15:08,545 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2016-10-20 10:15:08,546 DEBUG Engine.Configuration] Dumping YAML config into C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\effective.yml
+[2016-10-20 10:15:08,572 DEBUG Engine.Configuration] Dumping JSON config into C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\effective.json
+[2016-10-20 10:15:08,572 INFO Engine] Post-processing...
+[2016-10-20 10:15:08,575 DEBUG Engine.local] Post-process jmeter/citycool
+[2016-10-20 10:15:08,575 DEBUG Engine] Add existing artifact (move=True): C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\modified_requests.jmx
+[2016-10-20 10:15:08,575 DEBUG Engine] No need to copy C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\modified_requests.jmx
+[2016-10-20 10:15:08,575 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\kpi.jtl
+[2016-10-20 10:15:08,575 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-10-20 10:15:08,575 DEBUG Engine.jmeter.JTLReader] Buffer len: 2
+[2016-10-20 10:15:08,575 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972906
+[2016-10-20 10:15:08,578 DEBUG Engine.jmeter.JTLReader] Aggregating: 1476972907
+[2016-10-20 10:15:08,579 DEBUG Engine.consolidator] Consolidator buffer[4]: [1476972904, 1476972905, 1476972906, 1476972907]
+[2016-10-20 10:15:08,579 DEBUG Engine.consolidator] Merging into 1476972904
+[2016-10-20 10:15:08,579 DEBUG Engine.consolidator] Merging 1476972904
+[2016-10-20 10:15:08,584 DEBUG Engine.consolidator] Processed datapoint: 1476972904/None
+[2016-10-20 10:15:08,584 DEBUG Engine.consolidator] Merging into 1476972905
+[2016-10-20 10:15:08,584 DEBUG Engine.consolidator] Merging 1476972905
+[2016-10-20 10:15:08,588 DEBUG Engine.consolidator] Processed datapoint: 1476972905/None
+[2016-10-20 10:15:08,588 DEBUG Engine.consolidator] Merging into 1476972906
+[2016-10-20 10:15:08,588 DEBUG Engine.consolidator] Merging 1476972906
+[2016-10-20 10:15:08,592 DEBUG Engine.consolidator] Processed datapoint: 1476972906/None
+[2016-10-20 10:15:08,592 DEBUG Engine.consolidator] Merging into 1476972907
+[2016-10-20 10:15:08,592 DEBUG Engine.consolidator] Merging 1476972907
+[2016-10-20 10:15:08,598 DEBUG Engine.consolidator] Processed datapoint: 1476972907/None
+[2016-10-20 10:15:08,598 INFO Engine.final_stats] Test duration: 0:00:42
+[2016-10-20 10:15:08,599 INFO Engine.final_stats] Samples count: 251, 14.34% failures
+[2016-10-20 10:15:08,601 INFO Engine.final_stats] Average times: total 0.296, latency 0.168, connect 0.000
+[2016-10-20 10:15:08,602 INFO Engine.final_stats] Percentile 0.0%: 0.000
+[2016-10-20 10:15:08,607 INFO Engine.final_stats] Percentile 50.0%: 0.191
+[2016-10-20 10:15:08,608 INFO Engine.final_stats] Percentile 90.0%: 0.868
+[2016-10-20 10:15:08,608 INFO Engine.final_stats] Percentile 95.0%: 1.034
+[2016-10-20 10:15:08,611 INFO Engine.final_stats] Percentile 99.0%: 1.569
+[2016-10-20 10:15:08,611 INFO Engine.final_stats] Percentile 99.9%: 3.300
+[2016-10-20 10:15:08,612 INFO Engine.final_stats] Percentile 100.0%: 3.300
+[2016-10-20 10:15:08,614 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2016-10-20 10:15:08,615 DEBUG Engine.Configuration] Dumping YAML config into C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\effective.yml
+[2016-10-20 10:15:08,641 DEBUG Engine.Configuration] Dumping JSON config into C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000\effective.json
+[2016-10-20 10:15:08,641 INFO root] Artifacts dir: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\2016-10-20_10-14-25.741000
+[2016-10-20 10:15:08,647 INFO root] Done performing with code: 0
+[2016-10-20 10:15:08,648 DEBUG root] Closing log handler: C:\Users\IBM_ADMIN\Documents\NetBeansProjects\RTP_Project2\src\rtp_project2\LoadTest\bzt.log
