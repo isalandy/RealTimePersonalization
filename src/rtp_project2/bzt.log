@@ -1,0 +1,4 @@
+[2016-10-20 14:59:18,836 INFO root] Taurus CLI Tool v1.7.0
+[2016-10-20 14:59:18,836 DEBUG root] Command-line options: {'verbose': None, 'no_system_configs': None, 'quiet': None, 'log': 'bzt.log', 'option': None, 'aliases': []}
+[2016-10-20 14:59:18,836 DEBUG root] Python: CPython 2.7.12
+[2016-10-20 14:59:18,836 DEBUG root] OS: ('Windows', 'IBM222-R90HV5S2', '7', '6.1.7601', 'AMD64', 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel')
