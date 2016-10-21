@@ -3,7 +3,7 @@
 execution:
   scenario: citycool
   concurrency: 2
-  ramp-up: 6s
+  ramp-up: 5s
   hold-for: 30s
 scenarios:
   citycool:
@@ -37,3 +37,5 @@ scenarios:
           Origin: 'https://rtp-qa1-demo1.adm01.com'
           Accept: '*/*'
           Referer: 'https://rtp-qa1-demo1.adm01.com/products/all.html'
+reporting:
+    - module: blazemeter
