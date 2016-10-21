@@ -1,5 +1,5 @@
 ---
-#loadtest city cool 
+#loadtest city cool site
 execution:
   scenario: citycool
   concurrency: 2
