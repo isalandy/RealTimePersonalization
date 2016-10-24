@@ -1,5 +1,5 @@
 ---
-#loadtest city cool site
+#loadtest city cool
 execution:
   scenario: citycool
   concurrency: 2
@@ -37,5 +37,3 @@ scenarios:
           Origin: 'https://rtp-qa1-demo1.adm01.com'
           Accept: '*/*'
           Referer: 'https://rtp-qa1-demo1.adm01.com/products/all.html'
-reporting:
-    - module: blazemeter
