@@ -1,5 +1,5 @@
 ---
-#loadtest city cool
+#loadtest RTP
 
 execution:
   scenario: 100_simple_rules
