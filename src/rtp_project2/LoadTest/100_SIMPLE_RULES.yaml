@@ -1,0 +1,36 @@
+---
+#loadtest city cool
+
+execution:
+  scenario: 100_simple_rules
+  concurrency: 10
+  ramp-up: 10s
+  hold-for: 30s
+  iterations: 
+scenarios:
+  100_simple_rules:
+    headers:
+      User-Agent: 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'
+      Accept-Encoding: 'gzip, deflate, sdch, br'
+      Accept-Language: 'en-US,en;q=0.8'
+    requests:
+      - url: 'file:///C:/Users/IBM_ADMIN/Downloads/RTP%20Performance%20Setup/RTP%20Performance%20Setup/html/one-hundred-simple-rules.html'
+        method: GET
+        label: 'Content Page'
+        
+        headers:
+          Upgrade-Insecure-Requests: '1'
+          Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+      - url: 'https://rtp-qa1-xe.adm01.com/xe/execution-engine.min.js'
+        method: GET
+        label: 'execution engine'
+        headers:
+          Accept: '*/*'
+          Referer: 'file:///C:/Users/IBM_ADMIN/Downloads/RTP%20Performance%20Setup/RTP%20Performance%20Setup/html/one-hundred-simple-rules.html'
+      - url: 'https://rtp-qa1-api.adm01.com/rtp/YFXHIGyr8p4NU8mYtb_FaZ6GUYhbV0HDrtbE5d2cVbU='
+        method: GET
+        label: 'public API'
+        headers:
+          Origin: 'file:///C:/Users/IBM_ADMIN/Downloads/RTP%20Performance%20Setup/RTP%20Performance%20Setup/html/one-hundred-simple-rules.html'
+          Accept: '*/*'
+          Referer: 'file:///C:/Users/IBM_ADMIN/Downloads/RTP%20Performance%20Setup/RTP%20Performance%20Setup/html/one-hundred-simple-rules.html'
