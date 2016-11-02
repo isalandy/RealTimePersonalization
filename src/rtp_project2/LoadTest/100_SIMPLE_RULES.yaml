@@ -1,5 +1,5 @@
 ---
-#loadtest rtp
+#loadtest rtp site
 
 execution:
   scenario: 100_simple_rules
