@@ -1,9 +1,9 @@
 ---
-#loadtest RTP
+#loadtest rtp
 
 execution:
   scenario: 100_simple_rules
-  concurrency: 10
+  concurrency: 100
   ramp-up: 10s
   hold-for: 30s
   iterations: 
@@ -17,7 +17,6 @@ scenarios:
       - url: 'file:///C:/Users/IBM_ADMIN/Downloads/RTP%20Performance%20Setup/RTP%20Performance%20Setup/html/one-hundred-simple-rules.html'
         method: GET
         label: 'Content Page'
-        
         headers:
           Upgrade-Insecure-Requests: '1'
           Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
@@ -27,7 +26,7 @@ scenarios:
         headers:
           Accept: '*/*'
           Referer: 'file:///C:/Users/IBM_ADMIN/Downloads/RTP%20Performance%20Setup/RTP%20Performance%20Setup/html/one-hundred-simple-rules.html'
-      - url: 'https://rtp-qa1-api.adm01.com/rtp/YFXHIGyr8p4NU8mYtb_FaZ6GUYhbV0HDrtbE5d2cVbU='
+      - url: 'file:///C:/Users/IBM_ADMINDownloads/RTP Performance Setup/RTP Performance Setup/json'
         method: GET
         label: 'public API'
         headers:
